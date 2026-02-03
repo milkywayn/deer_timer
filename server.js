@@ -16,6 +16,9 @@ const CHANNEL_ID = process.env.CHANNEL_ID;
 
 // Botログイン
 client.login(TOKEN);
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
 // タイマー通知エンドポイント
 app.post("/notify", async (req, res) => {
