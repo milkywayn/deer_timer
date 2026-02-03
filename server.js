@@ -30,7 +30,7 @@ app.post("/notify", async (req, res) => {
 
     // Embed 作成
     const embed = new EmbedBuilder()
-  .setTitle("<:poteti:1467555934199873680> タイマー終了！")
+  .setTitle("<:poteti:1468073766549459026> タイマー終了！")
   .setDescription("<:sika:1468071889414131899>設定した時間になりました！")
   .setColor(0x00ff00)
   .setTimestamp(new Date())
