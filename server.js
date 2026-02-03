@@ -21,10 +21,24 @@ client.on("ready", () => {
 });
 
 // タイマー通知エンドポイント
+const { EmbedBuilder } = require("discord.js");
+
+// 通知エンドポイント
 app.post("/notify", async (req, res) => {
   try {
     const channel = await client.channels.fetch(CHANNEL_ID);
-    await channel.send("⏰ タイマーが終了しました！");
+
+    // Embed 作成
+    const embed = new EmbedBuilder()
+  .setTitle("<:poteti:1467555934199873680> タイマー終了！")
+  .setDescription("<:sika:1468071889414131899>設定した時間になりました！")
+  .setColor(0x00ff00)
+  .setTimestamp(new Date())
+  .setFooter({ text: "🦌鹿タイマー" })
+  .setThumbnail("https://assets.stickpng.com/images/580b57fbd9996e24bc43bbb1.png"); // 右上に表示される小さな画像
+
+
+    await channel.send({ embeds: [embed] });
     res.sendStatus(200);
   } catch (err) {
     console.error("通知エラー:", err);
