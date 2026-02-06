@@ -34,7 +34,7 @@ app.post("/notify", async (req, res) => {
   .setDescription("@here n\<:sika:1468071889414131899>設定した時間になりました！")
   .setColor(0x00ff00)
   .setTimestamp(new Date())
-  .setFooter({ text: "🦌鹿タイマー" })
+  .setFooter({ text: "<:sika:1468071889414131899>鹿タイマー" })
   .setThumbnail("https://assets.stickpng.com/images/580b57fbd9996e24bc43bbb1.png"); // 右上に表示される小さな画像
 
 
