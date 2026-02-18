@@ -35,7 +35,7 @@ app.post("/notify", async (req, res) => {
   .setColor(0x00ff00)
   .setTimestamp(new Date())
   .setFooter({ text: "LWタイマー" })
-  .setThumbnail("https://tenor.com/view/overwatch-petaltoss-lifeweaver-gif-6363196967384364583"); // 右上に表示される小さな画像
+  .setThumbnail("https://i.namu.wiki/i/37Lm6iCzuM0Y2oiAIsWFPiGuaU9tyd3Sxn2_PxHiIBK_XhZpo4_zPXFD0D2OcYp8m2m4IwHDGzt7ZOLuIzq64OyW_nC2WVXYVZYCVshQBoawLl81vKTXWlcfv81jb6L3aE4oaxp-DKFhng1fI1abKQ.webp"); // 右上に表示される小さな画像
 
 
     await channel.send({ embeds: [embed] });
