@@ -31,7 +31,7 @@ app.post("/notify", async (req, res) => {
     // Embed 作成
     const embed = new EmbedBuilder()
   .setTitle("<:lw:1473557143993978914> じかんだけど～？<:lw:1473557143993978914>")
-  .setDescription("@here \n**<:lw:1473557143993978914>設定した時間になりました！**<:lw:1473557143993978914>")
+  .setDescription("@here \n**<:lw:1473557143993978914>準備ができましたか？ 私はできました！**<:lw:1473557143993978914>")
   .setColor(0x00ff00)
   .setTimestamp(new Date())
   .setFooter({ text: "LWタイマー" })
